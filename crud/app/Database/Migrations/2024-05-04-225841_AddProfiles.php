@@ -11,14 +11,14 @@ class AddProfiles extends Migration
         $this->forge->addField([
             'id' => [
                 'type' => 'BIGINT',
-                'constraint' => 20,
+                'constraint' => 255,
                 'unsigned' => true,
                 'auto_increment' => true
             ],
             'email' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255,
-                'unique' => true
+                'unique' =>true,
+                'constraint' =>255
             ],
             'photo' => [
                 'type' => 'VARCHAR',
